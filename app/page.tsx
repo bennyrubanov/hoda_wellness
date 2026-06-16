@@ -6,7 +6,6 @@ import PhotoStrip from "./components/sections/PhotoStrip";
 import Program from "./components/sections/Program";
 import WhyHoda from "./components/sections/WhyHoda";
 import Team from "./components/sections/Team";
-import Testimonials from "./components/sections/Testimonials";
 import FinalCTA from "./components/sections/FinalCTA";
 import Footer from "./components/Footer";
 
@@ -22,7 +21,6 @@ export default function Home() {
         <Program />
         <WhyHoda />
         <Team />
-        <Testimonials />
         <FinalCTA />
       </main>
       <Footer />

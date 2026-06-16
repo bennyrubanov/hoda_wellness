@@ -1,5 +1,7 @@
 "use client";
 
+// REMOVED FROM PAGE (kept for later): not currently rendered in app/page.tsx.
+// Re-add `<Testimonials />` there (between Team and FinalCTA) to bring it back.
 import Image from "next/image";
 import { useScrollReveal } from "../useScrollReveal";
 
