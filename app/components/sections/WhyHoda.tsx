@@ -14,6 +14,7 @@ export default function WhyHoda() {
           src="/images/GroupNatureHoda.jpg"
           alt="Group of women walking together through a mountain landscape at golden hour"
           fill
+          sizes="100vw"
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-[#2E2A26]/70" />

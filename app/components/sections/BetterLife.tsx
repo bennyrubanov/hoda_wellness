@@ -18,6 +18,7 @@ export default function BetterLife() {
                 src="/images/YogaHodaPic.png"
                 alt="Woman standing in the ocean at sunset with arms raised"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover object-center"
               />
             </div>

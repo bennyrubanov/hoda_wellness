@@ -92,6 +92,7 @@ export default function Program() {
               src="/images/TouchGrassHoda.jpg"
               alt="Bare feet walking on lush green grass — grounded, natural wellness"
               fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover object-center"
             />
           </div>

@@ -33,6 +33,7 @@ export default function Testimonials() {
           src="/images/YogaHoda.jpg"
           alt="Two people silhouetted doing yoga at sunset on an outdoor terrace"
           fill
+          sizes="100vw"
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-[#2E2A26]/75" />

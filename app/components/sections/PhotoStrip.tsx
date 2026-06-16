@@ -24,6 +24,7 @@ export default function PhotoStrip() {
             src={photo.src}
             alt={photo.alt}
             fill
+            sizes="33vw"
             className="object-cover hover:scale-105 transition-transform duration-700"
           />
         </div>

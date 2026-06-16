@@ -12,6 +12,7 @@ export default function Hero() {
           src="/images/HodaHero.png"
           alt="Person standing on a mountain peak surrounded by misty golden light"
           fill
+          sizes="100vw"
           className="object-cover object-center"
           priority
         />
