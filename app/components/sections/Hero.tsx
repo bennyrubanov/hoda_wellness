@@ -21,37 +21,39 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-screen flex flex-col justify-between w-full px-6 lg:px-16 text-center text-white pt-36 pb-24">
-        <div className="text-left max-w-2xl">
-          <h1
-            className="text-5xl sm:text-6xl lg:text-7xl font-[450] italic leading-[1.1] mb-8 text-white"
-            style={{ fontFamily: "var(--font-cormorant)" }}
-          >
-            Health Optimization
-            <br />
-            for Durable Aging
-          </h1>
+      <div className="relative z-10 h-screen flex items-start w-full px-6 lg:px-16 text-center text-white pt-44">
+        <div className="w-full flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">
+          <div className="text-left max-w-2xl">
+            <h1
+              className="text-5xl sm:text-6xl lg:text-7xl font-[450] italic leading-[1.1] mb-8 text-white"
+              style={{ fontFamily: "var(--font-cormorant)" }}
+            >
+              Health Optimization
+              <br />
+              for Durable Aging
+            </h1>
 
-          <p className="text-base sm:text-lg text-white/85 max-w-xs leading-relaxed mt-20">
-            Personalized, evidence-informed programs for metabolic health,
-            physical resilience, and nervous system regulation, so you can
-            live stronger, longer.
-          </p>
-        </div>
+            <p className="text-base sm:text-lg text-white/85 max-w-xs leading-relaxed mt-20">
+              Personalized, evidence-informed programs for metabolic health,
+              physical resilience, and nervous system regulation, so you can
+              live stronger, longer.
+            </p>
+          </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-end">
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#5B7461] text-white font-medium tracking-wide hover:bg-[#4a6050] transition-all duration-200 shadow-lg"
-          >
-            Book Your Assessment
-          </a>
-          <a
-            href="#pillars"
-            className="inline-flex items-center justify-center px-8 py-3.5 rounded-full border-2 border-white/70 text-white font-medium tracking-wide hover:bg-white/10 transition-all duration-200"
-          >
-            Learn Our Approach
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-start lg:flex-shrink-0">
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#5B7461] text-white font-medium tracking-wide hover:bg-[#4a6050] transition-all duration-200 shadow-lg"
+            >
+              Book Your Assessment
+            </a>
+            <a
+              href="#pillars"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full border-2 border-white/70 text-white font-medium tracking-wide hover:bg-white/10 transition-all duration-200"
+            >
+              Learn Our Approach
+            </a>
+          </div>
         </div>
       </div>
 
