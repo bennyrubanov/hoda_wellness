@@ -1,0 +1,66 @@
+import Image from "next/image";
+
+export default function Hero() {
+  return (
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/HodaHero.png"
+          alt="Person standing on a mountain peak surrounded by misty golden light"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Overlay — lighter on top so logo stays clean, darker toward center for text */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/35" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 h-screen flex flex-col justify-between w-full px-6 lg:px-16 text-center text-white pt-36 pb-24">
+        <div className="text-left max-w-2xl">
+          <h1
+            className="text-5xl sm:text-6xl lg:text-7xl font-[450] italic leading-[1.1] mb-8 text-white"
+            style={{ fontFamily: "var(--font-cormorant)" }}
+          >
+            Health Optimization
+            <br />
+            for Durable Aging
+          </h1>
+
+          <p className="text-base sm:text-lg text-white/85 max-w-xs leading-relaxed mt-20">
+            Personalized, evidence-informed programs for metabolic health,
+            physical resilience, and nervous system regulation, so you can
+            live stronger, longer.
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-end">
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#5B7461] text-white font-medium tracking-wide hover:bg-[#4a6050] transition-all duration-200 shadow-lg"
+          >
+            Book Your Assessment
+          </a>
+          <a
+            href="#pillars"
+            className="inline-flex items-center justify-center px-8 py-3.5 rounded-full border-2 border-white/70 text-white font-medium tracking-wide hover:bg-white/10 transition-all duration-200"
+          >
+            Learn Our Approach
+          </a>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50">
+        <span className="text-xs tracking-widest uppercase">Scroll</span>
+        <svg className="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+  );
+}

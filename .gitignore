@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code local settings
+/.claude/
+
+# raw source assets dropped in project root (already copied into public/)
+/HodaHero.png
+/HodaIcon.png
+/HodaLogo.png
+/HodaYogaPic.png
+/HodaYogaPic.JPG
+/YogaPicHoda.JPG
+/LogoHodaHorizontal.png
+/LogoHodaHorizontalGreen.png
+/LogoHodaHorizontalWhite.png
+/PicsWebsiteHoda/
+/Team/
