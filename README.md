@@ -2,6 +2,8 @@
 
 Single-page marketing website for **HODA Wellness Group** ("Health Optimization for Durable Aging").
 
+<!-- test commit: verifying deploy unblocked after fixing git author identity -->
+
 Built with **Next.js 16 (App Router) + TypeScript + Tailwind CSS v4**.
 
 ## Getting Started
