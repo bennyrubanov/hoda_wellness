@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Hero() {
@@ -44,12 +46,14 @@ export default function Hero() {
             <a
               href="#contact"
               className="inline-flex items-center justify-center px-6 py-2.5 text-sm sm:px-8 sm:py-3.5 sm:text-base rounded-full bg-[#5B7461] text-white font-medium tracking-wide hover:bg-[#4a6050] transition-all duration-200 shadow-lg"
+              onClick={(e) => { e.preventDefault(); document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" }); }}
             >
               Book Your Assessment
             </a>
             <a
               href="#pillars"
               className="inline-flex items-center justify-center px-6 py-2.5 text-sm sm:px-8 sm:py-3.5 sm:text-base rounded-full border-2 border-white/70 text-white font-medium tracking-wide hover:bg-white/10 transition-all duration-200"
+              onClick={(e) => { e.preventDefault(); document.querySelector("#pillars")?.scrollIntoView({ behavior: "smooth" }); }}
             >
               Learn Our Approach
             </a>

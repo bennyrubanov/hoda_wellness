@@ -44,7 +44,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden lg:flex items-center gap-7">
+        <ul className="hidden md:flex items-center gap-7">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
@@ -52,6 +52,10 @@ export default function Navbar() {
                 className={`text-sm font-medium tracking-wide transition-colors duration-300 hover:text-[#5B7461] ${
                   scrolled ? "text-[#2E2A26]" : "text-white/90"
                 }`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 {link.label}
               </a>
@@ -62,15 +66,16 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="#contact"
-          className="hidden lg:inline-flex items-center px-5 py-2.5 rounded-full bg-[#5B7461] text-white text-sm font-medium tracking-wide hover:bg-[#4a6050] transition-colors duration-200"
+          className="hidden md:inline-flex items-center px-5 py-2.5 rounded-full bg-[#5B7461] text-white text-sm font-medium tracking-wide hover:bg-[#4a6050] transition-colors duration-200"
+          onClick={(e) => { e.preventDefault(); document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" }); }}
         >
           Book Consultation
         </a>
 
         {/* Mobile hamburger */}
         <button
-          className={`lg:hidden p-2 rounded-md transition-colors ${
-            scrolled ? "text-[#2E2A26]" : "text-white"
+          className={`md:hidden p-2 rounded-full transition-colors ${
+            scrolled ? "text-[#2E2A26]" : "text-white bg-black/25 backdrop-blur-sm"
           }`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
@@ -103,27 +108,40 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-[#FAF7F2]/98 backdrop-blur-sm border-t border-[#E7DFD3] px-6 py-4">
+        <div className="md:hidden bg-[#FAF7F2]/98 backdrop-blur-sm border-t border-[#E7DFD3] px-6 py-4">
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="block text-[#2E2A26] text-base font-medium py-1 hover:text-[#5B7461] transition-colors"
-                  onClick={() => setMenuOpen(false)}
+                <button
+                  className="block w-full text-left text-[#2E2A26] text-base font-medium py-1 hover:text-[#5B7461] transition-colors"
+                  onClick={() => {
+                    const href = link.href;
+                    setMenuOpen(false);
+                    requestAnimationFrame(() => {
+                      requestAnimationFrame(() => {
+                        document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+                      });
+                    });
+                  }}
                 >
                   {link.label}
-                </a>
+                </button>
               </li>
             ))}
             <li>
-              <a
-                href="#contact"
+              <button
                 className="inline-flex items-center px-5 py-2.5 rounded-full bg-[#5B7461] text-white text-sm font-medium mt-2"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  setMenuOpen(false);
+                  requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                      document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                    });
+                  });
+                }}
               >
                 Book Consultation
-              </a>
+              </button>
             </li>
           </ul>
         </div>

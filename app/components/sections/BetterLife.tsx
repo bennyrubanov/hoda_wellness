@@ -46,8 +46,9 @@ export default function BetterLife() {
                 practitioner, certified trainer, and functional medicine
                 expert - brings decades of combined expertise. Together, we build
                 individualized plans weaving nutrition, metabolic health,
-                movement, hormonal awareness, and nervous system regulation into
-                one sustainable path toward lasting vitality from the inside out.
+                movement, hormonal awareness, and Polyvagal theory-based nervous
+                system regulation into one sustainable path toward lasting
+                vitality from the inside out.
               </p>
             </div>
           </div>

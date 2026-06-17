@@ -20,19 +20,19 @@ const timeline = [
       "Comprehensive intake",
       "3-day food log analysis",
       "Fitness assessment",
-      "Labs analysis",
-      "CGM and body composition",
+      "Labs and body composition analysis",
+      "CGM introduction",
     ],
   },
   {
     week: "Weeks 2–6",
-    phase: "Implementation",
+    phase: "HODA Longevity Blueprint",
     color: "bg-[#6E8CA0]",
     items: [
-      "2x/week training sessions",
-      "Weekly RD consultation",
-      "Weekly nervous system consult and NP review",
-      "Ongoing data tracking",
+      "Personalized plan integrating nutrition, fitness, nervous system regulation and supplement recommendations",
+      "Twice-weekly training sessions",
+      "Weekly RD support session",
+      "Weekly nervous system coaching session",
     ],
   },
   {
@@ -40,9 +40,8 @@ const timeline = [
     phase: "Re-assessment",
     color: "bg-[#8AA194]",
     items: [
-      "Integrated review (what improved, what matters most)",
-      "HODA refined health optimization plan",
-      "Individualized lifestyle plan",
+      "Integrated review - what improved, what matters most",
+      "Refined HODA Longevity Blueprint - an updated roadmap for continued progress, resilience, and durable aging",
     ],
   },
 ];
@@ -130,25 +129,24 @@ function TimelineCard({
   return (
     <div
       ref={ref}
-      className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+      className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 h-full"
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <div className={`${step.color} px-6 py-5`}>
-        <p className="text-white/80 text-xs font-semibold tracking-widest uppercase mb-1">
+      <div className={`${step.color} px-6 pt-5 pb-5 min-h-[100px] flex flex-col justify-between`}>
+        <p className="text-white/70 text-[11px] font-semibold tracking-widest uppercase">
           {step.week}
         </p>
         <h3
-          className="text-white text-3xl font-light"
-          style={{ fontFamily: "var(--font-cormorant)" }}
+          className="text-white text-xl font-semibold tracking-wide mt-2"
         >
           {step.phase}
         </h3>
       </div>
       <div className="px-6 py-6">
-        <ul className="space-y-2.5">
+        <ul className="space-y-3">
           {step.items.map((item) => (
-            <li key={item} className="flex items-start gap-2.5 text-[#6B5E52] text-sm">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#5B7461] flex-shrink-0" />
+            <li key={item} className="flex items-start gap-3 text-[#6B5E52] text-sm leading-relaxed">
+              <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#5B7461] flex-shrink-0" />
               {item}
             </li>
           ))}
