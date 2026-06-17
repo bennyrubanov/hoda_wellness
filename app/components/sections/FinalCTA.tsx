@@ -28,7 +28,7 @@ export default function FinalCTA() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:olgarubanov2030@gmail.com"
+              href="mailto:info@hodawellnessgroup.com"
               className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white text-[#5B7461] font-medium tracking-wide hover:bg-[#FAF7F2] transition-all duration-200 shadow-md"
             >
               Book Your Assessment

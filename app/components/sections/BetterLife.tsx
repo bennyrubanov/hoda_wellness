@@ -42,13 +42,15 @@ export default function BetterLife() {
                 supporting you before they take hold.
               </p>
               <p>
-                Our team of specialists - registered dietitian, nurse
-                practitioner, certified trainer, and functional medicine
-                expert - brings decades of combined expertise. Together, we build
-                individualized plans weaving nutrition, metabolic health,
-                movement, hormonal awareness, and Polyvagal theory-based nervous
-                system regulation into one sustainable path toward lasting
-                vitality from the inside out.
+                Our team brings together a registered dietitian, nurse
+                practitioner, certified trainer, and functional medicine–informed
+                health coach, combining decades of experience
+                across nutrition, metabolic health, movement, hormonal health,
+                and nervous system regulation. Together, we build individualized
+                plans weaving nutrition, metabolic health, movement, hormonal
+                awareness, and Polyvagal theory-based nervous system regulation
+                into one sustainable path toward lasting vitality from the inside
+                out.
               </p>
             </div>
           </div>
