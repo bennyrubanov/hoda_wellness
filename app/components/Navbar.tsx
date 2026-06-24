@@ -2,12 +2,52 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const navLinks = [
-  { label: "Our Approach", href: "#pillars" },
-  { label: "Team", href: "#team" },
-  { label: "Contact", href: "#contact" },
+  { label: "Our Approach", href: "/#pillars" },
+  { label: "Programs", href: "/programs" },
+  { label: "Team", href: "/#team" },
+  { label: "Contact", href: "/#contact" },
 ];
+
+function NavLink({
+  link,
+  className,
+  onClick,
+}: {
+  link: { label: string; href: string };
+  className: string;
+  onClick?: () => void;
+}) {
+  const isHash = link.href.includes("#");
+
+  if (isHash) {
+    return (
+      <a
+        href={link.href}
+        className={className}
+        onClick={(e) => {
+          const hash = link.href.split("#")[1];
+          const el = document.getElementById(hash);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+          onClick?.();
+        }}
+      >
+        {link.label}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={link.href} className={className} onClick={onClick}>
+      {link.label}
+    </Link>
+  );
+}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,7 +72,7 @@ export default function Navbar() {
         aria-label="Main navigation"
       >
         {/* Logo */}
-        <a href="#home" className="flex-shrink-0 relative z-10 mt-4">
+        <Link href="/" className="flex-shrink-0 relative z-10 mt-4">
           <Image
             src={scrolled ? "/LogoHodaHorizontalGreen.png" : "/LogoHodaHorizontalWhite.png"}
             alt="HODA Wellness Group"
@@ -41,36 +81,27 @@ export default function Navbar() {
             className="h-36 w-auto object-contain"
             priority
           />
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-7">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
+              <NavLink
+                link={link}
                 className={`text-sm font-medium tracking-wide transition-colors duration-300 hover:text-[#5B7461] ${
                   scrolled ? "text-[#2E2A26]" : "text-white/90"
                 }`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                {link.label}
-              </a>
+              />
             </li>
           ))}
         </ul>
 
         {/* CTA */}
-        <a
-          href="#contact"
+        <NavLink
+          link={{ label: "Book Consultation", href: "/#contact" }}
           className="hidden md:inline-flex items-center px-5 py-2.5 rounded-full bg-[#5B7461] text-white text-sm font-medium tracking-wide hover:bg-[#4a6050] transition-colors duration-200"
-          onClick={(e) => { e.preventDefault(); document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" }); }}
-        >
-          Book Consultation
-        </a>
+        />
 
         {/* Mobile hamburger */}
         <button
@@ -112,36 +143,19 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <button
+                <NavLink
+                  link={link}
                   className="block w-full text-left text-[#2E2A26] text-base font-medium py-1 hover:text-[#5B7461] transition-colors"
-                  onClick={() => {
-                    const href = link.href;
-                    setMenuOpen(false);
-                    requestAnimationFrame(() => {
-                      requestAnimationFrame(() => {
-                        document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
-                      });
-                    });
-                  }}
-                >
-                  {link.label}
-                </button>
+                  onClick={() => setMenuOpen(false)}
+                />
               </li>
             ))}
             <li>
-              <button
+              <NavLink
+                link={{ label: "Book Consultation", href: "/#contact" }}
                 className="inline-flex items-center px-5 py-2.5 rounded-full bg-[#5B7461] text-white text-sm font-medium mt-2"
-                onClick={() => {
-                  setMenuOpen(false);
-                  requestAnimationFrame(() => {
-                    requestAnimationFrame(() => {
-                      document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-                    });
-                  });
-                }}
-              >
-                Book Consultation
-              </button>
+                onClick={() => setMenuOpen(false)}
+              />
             </li>
           </ul>
         </div>

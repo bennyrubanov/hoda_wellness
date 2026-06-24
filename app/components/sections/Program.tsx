@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useScrollReveal } from "../useScrollReveal";
 
 const checkItems = [
@@ -105,12 +106,12 @@ export default function Program() {
         </div>
 
         <div className="text-center">
-          <a
-            href="#contact"
+          <Link
+            href="/programs#6-week-optimization"
             className="inline-flex items-center px-8 py-3.5 rounded-full bg-[#5B7461] text-white font-medium tracking-wide hover:bg-[#4a6050] transition-colors duration-200 shadow-sm"
           >
             Explore Our Programs
-          </a>
+          </Link>
         </div>
       </div>
     </section>

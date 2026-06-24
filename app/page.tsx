@@ -3,7 +3,6 @@ import Hero from "./components/sections/Hero";
 import FourPillars from "./components/sections/FourPillars";
 import BetterLife from "./components/sections/BetterLife";
 import PhotoStrip from "./components/sections/PhotoStrip";
-import Program from "./components/sections/Program";
 import WhyHoda from "./components/sections/WhyHoda";
 import Team from "./components/sections/Team";
 import FinalCTA from "./components/sections/FinalCTA";
@@ -18,7 +17,6 @@ export default function Home() {
         <BetterLife />
         <FourPillars />
         <PhotoStrip />
-        <Program />
         <WhyHoda />
         <Team />
         <FinalCTA />
