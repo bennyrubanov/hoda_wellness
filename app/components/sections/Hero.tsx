@@ -27,22 +27,20 @@ export default function Hero() {
         <div className="w-full flex flex-col xl:flex-row xl:items-center xl:justify-between gap-10">
           <div className="text-left max-w-2xl">
             <h1
-              className="text-5xl sm:text-6xl lg:text-7xl font-[450] italic leading-[1.1] mb-8 text-white"
+              className="text-4xl sm:text-5xl lg:text-6xl font-[450] italic leading-[1.1] mb-8 text-white"
               style={{ fontFamily: "var(--font-cormorant)" }}
             >
-              Health Optimization
+              Personalized Health Optimization
               <br />
               for Durable Aging
             </h1>
 
-            <p className="text-base sm:text-lg text-white/85 max-w-xs leading-relaxed mt-20">
-              Personalized, evidence-informed programs for metabolic health,
-              physical resilience, and nervous system regulation, so you can
-              live stronger, longer.
+            <p className="text-base sm:text-lg text-white/85 max-w-xs leading-relaxed mt-24">
+              An evidence-informed, integrated health optimization program combining nutrition, fitness, metabolic health, and nervous system regulation to help you build resilience and age with strength and vitality.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-start xl:flex-shrink-0">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start xl:flex-shrink-0 mt-16">
             <a
               href="#contact"
               className="inline-flex items-center justify-center px-6 py-2.5 text-sm sm:px-8 sm:py-3.5 sm:text-base rounded-full bg-[#5B7461] text-white font-medium tracking-wide hover:bg-[#4a6050] transition-all duration-200 shadow-lg"
