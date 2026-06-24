@@ -20,8 +20,8 @@ export default function FinalCTA() {
             className="text-4xl sm:text-5xl lg:text-6xl font-light text-white mb-6"
             style={{ fontFamily: "var(--font-cormorant)" }}
           >
-            Ready to Take the{" "}
-            <em className="text-[#E7DFD3]">Next Step?</em>
+            Ready to{" "}
+            <em className="text-[#E7DFD3]">Optimize Your Health?</em>
           </h2>
           <p className="text-white/80 text-lg leading-relaxed mb-10">
             Your best health is within reach. Let&apos;s build your personalized plan.
