@@ -36,7 +36,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg text-white/85 max-w-xs leading-relaxed mt-24">
-              An evidence-informed, integrated health optimization program combining nutrition, fitness, metabolic health, and nervous system regulation to help you build resilience and age with strength and vitality.
+              Evidence-informed, integrated health optimization programs combining nutrition, fitness, metabolic health, and nervous system regulation to help you build resilience and age with strength and vitality.
             </p>
           </div>
 
