@@ -30,7 +30,7 @@ export default function BetterLife() {
               className="text-4xl sm:text-5xl lg:text-6xl font-light text-[#2E2A26] mb-6"
               style={{ fontFamily: "var(--font-cormorant)" }}
             >
-              Better Quality of <em className="text-[#5B7461]">Life</em>
+              Our <em className="text-[#5B7461]">Approach</em>
             </h2>
             <div className="w-16 h-0.5 bg-[#5B7461] mb-10" />
 
@@ -46,7 +46,10 @@ export default function BetterLife() {
                 practitioner, certified trainer, and functional medicine–informed
                 health coach, combining decades of experience
                 across nutrition, metabolic health, movement, hormonal health,
-                and nervous system regulation. Together, we build individualized
+                and nervous system regulation.
+              </p>
+              <p>
+                Together, we build individualized
                 plans weaving nutrition, metabolic health, movement, hormonal
                 awareness, and Polyvagal theory-based nervous system regulation
                 into one sustainable path toward lasting vitality from the inside

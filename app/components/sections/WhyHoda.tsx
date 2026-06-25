@@ -59,7 +59,7 @@ export default function WhyHoda() {
           <div className="grid grid-cols-3 gap-8 mt-16">
             {[
               { value: "70+", label: "Years combined expertise" },
-              { value: "4", label: "Integrated disciplines" },
+              { value: "4", label: "Integrated pillars" },
               { value: "100%", label: "Personalized to you" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">

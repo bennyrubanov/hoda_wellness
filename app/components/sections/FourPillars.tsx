@@ -29,7 +29,7 @@ const pillars = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: "Physical Resilience",
+    title: "Strength & Movement",
     blurb:
       "Strength, mobility, and conditioning programs designed to build lean muscle, improve function, and prevent injury - training that supports you for life.",
   },
@@ -95,7 +95,7 @@ function PillarCard({
         {pillar.icon}
       </div>
       <h3
-        className="text-2xl font-semibold text-[#2E2A26]"
+        className="text-2xl font-semibold text-[#2E2A26] min-h-[4rem] flex items-start"
         style={{ fontFamily: "var(--font-cormorant)" }}
       >
         {pillar.title}

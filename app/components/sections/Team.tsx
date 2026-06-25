@@ -94,7 +94,7 @@ function TeamCard({
       <p className="text-[#5B7461] text-xs font-medium tracking-wide uppercase mb-4">
         {member.title}
       </p>
-      <p className="text-[#6B5E52] text-sm leading-relaxed">{member.bio}</p>
+      <p className="text-[#6B5E52] text-sm leading-relaxed mt-auto">{member.bio}</p>
     </div>
   );
 }
