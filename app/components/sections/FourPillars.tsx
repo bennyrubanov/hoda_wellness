@@ -100,7 +100,7 @@ function PillarCard({
       >
         {pillar.title}
       </h3>
-      <p className="text-[#6B5E52] text-sm leading-relaxed">{pillar.blurb}</p>
+      <p className="text-[#6B5E52] text-sm leading-relaxed flex-1">{pillar.blurb}</p>
       <div className="mt-auto w-8 h-0.5 bg-[#5B7461]/40 group-hover:w-full transition-all duration-500" />
     </div>
   );
