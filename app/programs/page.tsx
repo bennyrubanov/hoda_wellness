@@ -62,7 +62,7 @@ const programs = [
       "Measurable progress & sustainable results",
     ],
     fullDescription: "",
-    closingText: "",
+    closingText: "For clients on GLP-1 medications, we offer a specialized track within this program — with nutrition, movement, and coaching protocols tailored to support your results on medication and beyond.",
     accent: "#5B7461",
     showTimeline: true,
   },
