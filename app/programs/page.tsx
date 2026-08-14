@@ -62,7 +62,7 @@ const programs = [
       "Measurable progress & sustainable results",
     ],
     fullDescription: "",
-    closingText: "For clients on GLP-1 medications, we offer a specialized track within this program — designed to optimize your results while on medication and to build the nutrition and movement foundation that makes coming off it successfully possible.",
+    closingText: "For clients on GLP-1 medications, we offer a specialized track within this program—designed to optimize results, protect muscle and metabolic health, and build the nutrition and movement foundation for lasting success, whether you remain on medication or eventually transition off.",
     accent: "#5B7461",
     showTimeline: true,
   },
