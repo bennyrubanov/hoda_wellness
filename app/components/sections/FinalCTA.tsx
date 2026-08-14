@@ -1,7 +1,7 @@
 "use client";
 
 import { useScrollReveal } from "../useScrollReveal";
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 const FORMSPREE_ID = "xwleqykj";
 
@@ -10,23 +10,6 @@ export default function FinalCTA() {
   const [showForm, setShowForm] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  const blurredRef = useRef(false);
-
-  function handleBookClick() {
-    blurredRef.current = false;
-
-    const onBlur = () => { blurredRef.current = true; };
-    window.addEventListener("blur", onBlur, { once: true });
-
-    window.location.href = "mailto:info@hodawellnessgroup.com";
-
-    setTimeout(() => {
-      window.removeEventListener("blur", onBlur);
-      if (!blurredRef.current) {
-        setShowForm(true);
-      }
-    }, 600);
-  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -73,7 +56,7 @@ export default function FinalCTA() {
           {!showForm ? (
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                onClick={handleBookClick}
+                onClick={() => setShowForm(true)}
                 className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white text-[#5B7461] font-medium tracking-wide hover:bg-[#FAF7F2] transition-all duration-200 shadow-md cursor-pointer"
               >
                 Book Your Assessment
