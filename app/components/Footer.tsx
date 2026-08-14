@@ -20,11 +20,8 @@ export default function Footer() {
               alt="HODA Wellness Group"
               width={400}
               height={400}
-              className="h-20 w-auto object-contain mb-4 brightness-0 invert"
+              className="h-32 w-auto object-contain mb-4 brightness-0 invert"
             />
-            <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-              HODA Wellness Group
-            </p>
           </div>
 
           {/* Contact */}
