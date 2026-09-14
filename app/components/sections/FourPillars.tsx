@@ -21,7 +21,7 @@ const pillars = [
     ),
     title: "Metabolic Health",
     blurb:
-      "Lab testing, CGM insights, and data-driven strategies to optimize metabolism and hormones — including a dedicated track for clients on GLP-1 medications.",
+      "Lab testing, CGM insights, and data-driven strategies to optimize metabolism and hormones — including dedicated support for clients on GLP-1 medications.",
   },
   {
     icon: (

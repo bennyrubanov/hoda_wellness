@@ -63,13 +63,13 @@ export default function Program() {
             className="text-4xl sm:text-5xl lg:text-6xl font-light text-[#2E2A26] mb-6"
             style={{ fontFamily: "var(--font-cormorant)" }}
           >
-            A Personalized Path To{" "}
-            <em>Your Best Health</em>
+            HODA 6 Weeks{" "}
+            <em>Intensive</em>
           </h2>
           <p className="text-[#6B5E52] text-lg leading-relaxed">
-            Every program begins with a deep understanding of your biology, your
-            lifestyle, and your goals. From there, our team builds a plan that
-            evolves with you.
+            A personalized path to your best health. Every program begins with a
+            deep understanding of your biology, your lifestyle, and your goals.
+            From there, our team builds a plan that evolves with you.
           </p>
         </div>
 

@@ -7,25 +7,26 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Programs · HODA Wellness Group",
   description:
-    "Explore HODA Wellness Group's personalized programs — from our 6-Week Optimization to VIP Coaching, Workshops, and Corporate Wellness.",
+    "Explore HODA Wellness Group's personalized programs — from our HODA 6 Weeks Intensive to VIP Coaching, Workshops, and Corporate Wellness.",
 };
 
 const timeline = [
   {
-    week: "1st Week",
-    phase: "Assessment",
+    week: "Weeks 1–2",
+    phase: "HODA Foundation",
     color: "#5B7461",
     items: [
       "Comprehensive intake",
-      "3-day food log analysis",
-      "Fitness assessment",
-      "Labs and body composition analysis",
+      "PT physical assessment",
+      "Nurse Practitioner labs interpretation",
+      "3-day food log",
       "CGM introduction",
+      "Findings & Recommendations review with your care team",
     ],
   },
   {
-    week: "Weeks 2–6",
-    phase: "HODA Longevity Blueprint",
+    week: "Weeks 3–6",
+    phase: "HODA Momentum",
     color: "#6E8CA0",
     items: [
       "Personalized plan integrating nutrition, fitness, nervous system regulation and supplement recommendations",
@@ -36,7 +37,7 @@ const timeline = [
   },
   {
     week: "Week 6",
-    phase: "Re-assessment",
+    phase: "HODA Longevity Blueprint",
     color: "#8AA194",
     items: [
       "Integrated review — what improved, what matters most",
@@ -63,27 +64,27 @@ const programs = [
     ],
     fullDescription: "",
     closingText:
-      "At the end of your Foundation, your Health Optimization Coach delivers a personalized Findings & Recommendations document \u2014 a concise summary of your current patterns and high-level recommendations going forward. It's often a client's first step with HODA, and many use it to decide whether to continue into the full 6-Week Optimization program.",
+      "At the end of your Foundation, your Health Optimization Coach delivers a personalized Findings & Recommendations document \u2014 a concise summary of your current patterns and high-level recommendations going forward. The Foundation is also weeks 1–2 of our HODA 6 Weeks Intensive, so it's often a client's first step with HODA — many use it to decide whether to continue with the remaining 4 weeks of personalized coaching.",
     accent: "#A9C0CE",
     showTimeline: false,
   },
   {
     id: "6-week-optimization",
-    title: "A Personalized Path To Your Best Health",
+    title: "HODA 6 Weeks Intensive",
     shortDescription:
-      "Our flagship program begins with a deep understanding of your biology, your lifestyle, and your goals. From there, our team builds a plan that evolves with you.",
+      "A personalized path to your best health. Six weeks, start to finish: the first 2 weeks are your HODA Foundation assessment, followed by 4 weeks of personalized coaching built around your results.",
     duration: "",
     format: "",
     image: "/images/PersonMountainHoda.jpg",
     highlights: [
-      "Comprehensive assessment & lab review",
+      "Weeks 1–2: HODA Foundation assessment & lab review",
       "Wearable & CGM integration",
-      "Personalized plan & expert coaching",
+      "Weeks 3–6: Personalized plan & expert coaching",
       "Ongoing support & accountability",
       "Measurable progress & sustainable results",
     ],
     fullDescription: "",
-    closingText: "For clients on GLP-1 medications, we offer a specialized track within this program—designed to optimize results, protect muscle and metabolic health, and build the nutrition and movement foundation for lasting success, whether you remain on medication or eventually transition off.",
+    closingText: "For clients on GLP-1 medications, this program includes dedicated support—designed to optimize results, protect muscle and metabolic health, and build the nutrition and movement foundation for lasting success, whether you remain on medication or eventually transition off.",
     accent: "#5B7461",
     showTimeline: true,
   },
