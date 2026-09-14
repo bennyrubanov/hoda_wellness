@@ -47,6 +47,27 @@ const timeline = [
 
 const programs = [
   {
+    id: "hoda-assessment",
+    title: "The HODA Assessment",
+    shortDescription:
+      "A focused, two-week nutrition and lifestyle assessment conducted by your HODA care team. It gives you a clear, evidence-based picture of where you are today, and high-level direction for where to go next.",
+    duration: "2 Weeks",
+    format: "",
+    image: "/images/WaterHoda.jpg",
+    highlights: [
+      "Comprehensive intake",
+      "PT physical assessment",
+      "Nurse Practitioner labs interpretation",
+      "3-day food log",
+      "Wrap-up sessions with your Dietitian & Health Optimization Coach",
+    ],
+    fullDescription: "",
+    closingText:
+      "At the end of your Assessment, your Health Optimization Coach delivers a personalized Findings & Recommendations document \u2014 a concise summary of your current patterns and high-level recommendations going forward. It's often a client's first step with HODA, and many use it to decide whether to continue into the full 6-Week Optimization program.",
+    accent: "#A9C0CE",
+    showTimeline: false,
+  },
+  {
     id: "6-week-optimization",
     title: "A Personalized Path To Your Best Health",
     shortDescription:
