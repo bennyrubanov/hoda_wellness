@@ -2,25 +2,21 @@
 
 // REMOVED FROM PAGE (kept for later): not currently rendered in app/page.tsx.
 // Re-add `<Testimonials />` there (between Team and FinalCTA) to bring it back.
+// A full dedicated page with these same reviews lives at app/testimonials/page.tsx.
 import Image from "next/image";
 import { useScrollReveal } from "../useScrollReveal";
 
-// PLACEHOLDER TESTIMONIALS: Replace with verified client quotes before launch
+// REAL client reviews, sourced from HODA Wellness Group's Google Business listing
 const testimonials = [
   {
     quote:
-      "HODA Wellness Group helped me get my energy, focus, and strength back. I finally feel like myself again!",
-    author: "Sarah T.",
+      "I had a wonderful experience working with the Health Optimization and Durable Aging Care Team. I especially appreciated their comprehensive approach to my health—they reviewed my blood work, diet, exercise habits, and overall lifestyle rather than looking at any one area in isolation.",
+    author: "Tanya I.",
   },
   {
     quote:
-      "The integrated approach is unlike anything I've tried. The data, coaching, and support made all the difference.",
-    author: "Mark L.",
-  },
-  {
-    quote:
-      "I sleep better, handle stress better, and have more vitality than I have in years. Highly recommend!",
-    author: "Jennifer R.",
+      "I joined the HODA Wellness Group program and have been training with Jack. I've noticed significant improvements in my strength, balance, flexibility, and confidence, and my back pain has decreased. I feel stronger and more energetic.",
+    author: "Inna O.",
   },
 ];
 
@@ -51,7 +47,7 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((t, i) => (
             <TestimonialCard key={t.author} testimonial={t} delay={i * 120} />
           ))}

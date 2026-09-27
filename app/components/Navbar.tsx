@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Our Approach", href: "/#pillars" },
   { label: "Programs", href: "/programs" },
   { label: "Team", href: "/#team" },
+  { label: "Testimonials", href: "/testimonials" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -84,7 +85,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-7">
+        <ul className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <li key={link.href}>
               <NavLink
@@ -100,12 +101,12 @@ export default function Navbar() {
         {/* CTA */}
         <NavLink
           link={{ label: "Book Consultation", href: "/#contact" }}
-          className="hidden md:inline-flex items-center px-5 py-2.5 rounded-full bg-[#5B7461] text-white text-sm font-medium tracking-wide hover:bg-[#4a6050] transition-colors duration-200"
+          className="hidden lg:inline-flex items-center px-5 py-2.5 rounded-full bg-[#5B7461] text-white text-sm font-medium tracking-wide hover:bg-[#4a6050] transition-colors duration-200"
         />
 
         {/* Mobile hamburger */}
         <button
-          className={`md:hidden p-2 rounded-full transition-colors ${
+          className={`lg:hidden p-2 rounded-full transition-colors ${
             scrolled ? "text-[#2E2A26]" : "text-white bg-black/25 backdrop-blur-sm"
           }`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -139,7 +140,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#FAF7F2]/98 backdrop-blur-sm border-t border-[#E7DFD3] px-6 py-4 relative z-20">
+        <div className="lg:hidden bg-[#FAF7F2]/98 backdrop-blur-sm border-t border-[#E7DFD3] px-6 py-4 relative z-20">
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
